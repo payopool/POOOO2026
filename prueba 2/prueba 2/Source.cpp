@@ -1,40 +1,38 @@
 #include<iostream>
-
+#include<string>
 class
-	Character {
+	OBJ{
 public:
-	Character() = default;
-	Character(int health) :m_heath(health) {}
-	void
-		rebith() {
-		if (!ischaracteralive && m_heath <= 0) {
-			std::cout << "spawn point\n";
-			ischaracteralive = true;
+	void agree(const std::string name, int cant) {
+		if (tol <= 10) {
+			items[tol].name = name;
+			items[tol].can = cant;
+			tol++;
 		}
 	}
-	int getheath() const {
-		return m_heath;
+	void most() const {
+		for (int i = 0; i < tol; i++) {
+			std::cout << "item" << i << ":" << items[i].name << "//" << items[i].can << "//\n";
+		}
 	}
-	void setheath(int health) {
-		m_heath = health;
-	}
-private:
 	
-	bool ischaracteralive = false;
-protected:
-	int m_heath;
-};
-int main() {
-	Character nora(150);
-	nora.getheath();
-	std::cout << nora.getheath() << "\n";
-	nora.setheath(-50);
-	std::cout << nora.getheath() << "\n";
-	if (nora.getheath() <= 0) {
-		std::cout << "nora muerio\n";
-		nora.rebith();
-	}
+private:
+	struct Item {
+		std::string name;
+		int can;
+	};
 
-	std::cout << "helo word \n"; 
+	Item items[10];  
+	int tol = 0;   
+};
+
+	
+
+int main() {
+	OBJ cos;
+	cos.agree("sword", 8);
+	cos.agree("pocicion", 2);
+	cos.most();
 	return 0;
+
 }
