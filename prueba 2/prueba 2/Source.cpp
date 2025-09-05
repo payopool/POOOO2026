@@ -31,7 +31,7 @@ private:
 int main() {
 	OBJ cos;
 	cos.agree("sword", 8);
-	cos.agree("pocicion", 2);
+	cos.agree("pocion", 2);
 	cos.most();
 	return 0;
 
