@@ -1,5 +1,4 @@
-#include<iostream>
-#include<string>
+#include"Header.h"
 class
 	OBJ{
 public:

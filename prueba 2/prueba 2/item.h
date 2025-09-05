@@ -27,3 +27,4 @@ private:
 	std::string M_name;
 	int M_quantity;
 };
+//M_quantity =(m_quantity>quantity)?m_quantity-quantity:0
