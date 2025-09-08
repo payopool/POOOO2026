@@ -32,7 +32,7 @@ void ShowInventory()const {
 				item.remove(quantity);
 				//si la cantidad es 0 se elimina el inventario
 				if (item.getQuantity() == 0) {
-					M_items.erase(std::remove(M_items.begin(), M_items.end(), item), M_items.end());
+					//M_items.erase(std::remove(M_items.begin(), M_items.end(), item), M_items.end());
 				}
 				std::cout << "usate" << quantity << "de" << name << "(s)\n";
 				return;

@@ -8,9 +8,9 @@ int main() {
 	Inventory inventori;
 	inventori.additem("pocion vida", 3);
 	inventori.additem("elixir de dios", 5);
-		inventori.additem("oro", 1300);
+		inventori.additem("oro", 13);
 		inventori.useitem("pocion vida", 3);
 		inventori.ShowInventory();		
 		std::cout << "bienevendo a veracruz\n";
-		return 0;
+		std::cin.get();
 }
