@@ -3,8 +3,6 @@
 #include "item.h"
 class
 	Inventory {
-private:
-	std::vector<Item> M_items;
 public:
 	Inventory()=default;
 ~Inventory()=default;
@@ -40,6 +38,7 @@ void ShowInventory()const {
 		}
 		std::cout << "no tienes" << name << "en el inventario\n";
 	}
-
+private:
+	std::vector<Item> M_items;
 };
 	

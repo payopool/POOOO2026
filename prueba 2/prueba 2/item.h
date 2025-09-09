@@ -1,8 +1,8 @@
 #pragma once
-#include<iostream>
+#include"Header.h"
 class Item {
 public: 
-	Item(std::string& name, int quantity): M_name(name),M_quantity(quantity){}
+	Item(const std::string& name, int quantity): M_name(name),M_quantity(quantity){}
 	~Item()=default;
 	std::string
 		getName() const {
