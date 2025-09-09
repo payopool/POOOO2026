@@ -1,6 +1,8 @@
 #include"Header.h"
 #include"item.h"
 #include"inventory.h"
+#include"rectangulo.h"
+
 
 class
 	character{};
@@ -11,6 +13,14 @@ int main() {
 		inventori.additem("oro", 13);
 		inventori.useitem("pocion vida", 3);
 		inventori.ShowInventory();		
-		std::cout << "bienevendo a veracruz\n";
-		std::cin.get();
-}
+		Rectangulo rect(5.0, 3.0);
+		std::cout << "rectangulo- ancho" << rect.getAncho() << "\n";
+		std::cout << "Area del rectangulo: " << rect.area() << "\n";
+		std::cout << "Perimetro del rectangulo: " << rect.perimetro() << "\n";
+		Fecha fecha;
+		fecha.getFecha();
+	
+			
+		
+		return 0;
+};
