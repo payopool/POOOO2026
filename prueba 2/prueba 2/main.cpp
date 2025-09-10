@@ -2,6 +2,7 @@
 #include"item.h"
 #include"inventory.h"
 #include"rectangulo.h"
+#include"circulo.h"
 
 
 class
@@ -13,12 +14,16 @@ int main() {
 		inventori.additem("oro", 13);
 		inventori.useitem("pocion vida", 3);
 		inventori.ShowInventory();		
-		Rectangulo rect(5.0, 3.0);
+		Rectangulo rect(5.7, 3.8);
 		std::cout << "rectangulo- ancho" << rect.getAncho() << "\n";
 		std::cout << "Area del rectangulo: " << rect.area() << "\n";
 		std::cout << "Perimetro del rectangulo: " << rect.perimetro() << "\n";
 		Fecha fecha;
 		fecha.getFecha();
+		Circulo circulo(5.8);
+		std::cout << "radio del circulo:" << circulo.getm_radio() << "\n";
+		std::cout << "area:" << circulo.m_area() << "\n";
+		std::cout << "perimetro:" << circulo.m_preimetro() << "\n";
 	
 			
 		

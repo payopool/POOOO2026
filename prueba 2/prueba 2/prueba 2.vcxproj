@@ -145,6 +145,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="circulo.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="inventory.h" />
     <ClInclude Include="item.h" />
