@@ -32,7 +32,9 @@ int main() {
 		estudiante[3].esturiante("ana", 20);
 		estudiante[4].esturiante("pablo", 20);
 		for(int i=0;i<5;i++){
-			std::cout<<"estudiante "<<i+1<< estudiante<<"\n";
+			estudiante[i].esturiante("nombre", 20);
+			std::cout << "estudiante " << i + 1 << ": nombre y edad\n";
+
 		}
 
 		

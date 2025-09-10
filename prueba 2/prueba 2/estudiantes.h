@@ -10,6 +10,8 @@ public:
         m_edad = edad;
     
     }
+   
+    
 
 private:
     std::string m_name;
