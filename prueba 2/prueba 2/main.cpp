@@ -4,6 +4,7 @@
 #include"rectangulo.h"
 #include"circulo.h"
 #include"estudiantes.h"
+#include"banco.h"
 
 
 class
@@ -33,10 +34,16 @@ int main() {
 		estudiante[4].esturiante("pablo", 20);
 		for(int i=0;i<5;i++){
 			estudiante[i].esturiante("nombre", 20);
-			std::cout << "estudiante " << i + 1 << ": nombre y edad\n";
+		
+			std::cout << "estudiante " << i + 1 << ":";
+
 
 		}
-
+		Banco banco("carlos", 300);
+	std::cout << "propietario:" << banco.propetario << "\n";
+	std::cout << "saldo:" << banco.getSaldo() << "\n";
+		banco.retirar(100);
+		std::cout << "usted retiro 100" << " saldo:" << banco.getSaldo() << "\n";
 		
 
 

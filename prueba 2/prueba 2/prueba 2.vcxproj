@@ -145,6 +145,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="banco.h" />
     <ClInclude Include="circulo.h" />
     <ClInclude Include="estudiantes.h" />
     <ClInclude Include="Header.h" />

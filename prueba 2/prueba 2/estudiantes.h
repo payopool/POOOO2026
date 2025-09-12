@@ -10,9 +10,9 @@ public:
         m_edad = edad;
     
     }
-   
-    
-
+    void mostrar() const {
+        std::cout << "nombre: " << m_name << ", edad: " << m_edad << "\n";
+	}
 private:
     std::string m_name;
     int m_edad;
