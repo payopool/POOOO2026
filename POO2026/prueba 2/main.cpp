@@ -35,7 +35,7 @@ int main() {
 		for(int i=0;i<5;i++){
 			estudiante[i].esturiante("nombre", 20);
 		
-			std::cout << "estudiante " << i + 1 << ":";
+			std::cout << "estudiante " << i + 1 << "\n";
 
 
 		}
