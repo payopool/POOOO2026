@@ -33,17 +33,24 @@ int main() {
 		estudiante[3].esturiante("ana", 20);
 		estudiante[4].esturiante("pablo", 20);
 		for(int i=0;i<5;i++){
-			estudiante[i].esturiante("nombre", 20);
+			estudiante[i].mostrar();
 		
-			std::cout << "estudiante " << i + 1 << "\n";
+			
 
 
 		}
-		Banco banco("carlos", 300);
-	std::cout << "propietario:" << banco.propetario << "\n";
-	std::cout << "saldo:" << banco.getSaldo() << "\n";
-		banco.retirar(100);
-		std::cout << "usted retiro 100" << " saldo:" << banco.getSaldo() << "\n";
+		Banco cuenta1("carlos", 500.0, 4590);
+		Banco cuenta2("lola", 300.0, 4591);
+		std::cout << "saldo cuenta carlos:" << cuenta1.getSaldo() << "\n";
+		std::cout << "saldo cuenta lola:" << cuenta2.getSaldo() << "\n";
+		std::cout << "transfiriendo 200 de la cuenta carlos a la cuenta lola\n";
+		cuenta1.transferir(cuenta2, 200);
+		std::cout << "saldo cuenta carlos:" << cuenta1.getSaldo() << "\n";
+		std::cout << "saldo cuenta lola:" << cuenta2.getSaldo() << "\n";
+		cuenta2.retirar(200);
+		std::cout << "saldo cuenta lola despues de retirar 200 es:" << cuenta2.getSaldo() << "\n";
+	
+
 		
 
 
