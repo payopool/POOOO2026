@@ -146,6 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="banco.h" />
+    <ClInclude Include="Banquito.h" />
     <ClInclude Include="circulo.h" />
     <ClInclude Include="estudiantes.h" />
     <ClInclude Include="Header.h" />

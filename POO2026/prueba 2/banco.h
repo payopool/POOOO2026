@@ -1,44 +1,61 @@
-class Banco {
+#pragma once
+#include"Header.h"
+class
+	CuentaBancaria {
 public:
-	std::string propetario;
-	Banco() = default;
-	Banco(std::string nombre, double saldo_inicial, int numcuenta) : propetario(nombre), saldo(saldo_inicial),  numero_cuenta(numcuenta) {}
-	~Banco() = default;
-	int getSaldo() const {
-		return saldo;
+	CuentaBancaria() = default;
+	CuentaBancaria(std::string propietario, int numCuenta, double saldoInicial) :
+		m_propietario(propietario), m_numeroCuenta(numCuenta), m_saldo(saldoInicial) {
 	}
-	void setSaldo(double nuevo_saldo) {
-		saldo = nuevo_saldo;
-	}
-	void transferir(Banco& otra_cuenta, double cantidad) {
-		if (cantidad <= saldo) {
-			saldo -= cantidad;
-			otra_cuenta.depositar(cantidad);
-		}
-		else {
-			std::cout << "no hay fondos suficientes" << "\n";
-		}
+	~CuentaBancaria() = default;
 
+	double&
+		consultarSaldo() {
+		std::cout << "Saldo actual de " << m_propietario
+			<< " (Cuenta " << m_numeroCuenta << "): " << m_saldo << std::endl;
+		return m_saldo;
 	}
-	void retirar(double cantidad) {
-		if (cantidad <= saldo) {
-			saldo -= cantidad;
+
+	void
+		mostrarInteresCalculado() {
+		double tasaInteres = 5.0; // Tasa de interes del 5%
+		double interes = calcularInteres(tasaInteres);
+		std::cout << "Interes calculado al " << tasaInteres << "% sobre el saldo de "
+			<< m_saldo << " es: " << interes << std::endl;
+	}
+
+	int
+		getNumeroCuenta() const {
+		return m_numeroCuenta;
+	}
+
+protected:
+	// Transferir dinero a otra cuenta
+	void
+		transferir(CuentaBancaria& cuentaOrigen, CuentaBancaria& cuentaDestino, double monto, int noRef) {
+		if (monto > 0 && monto <= cuentaOrigen.m_saldo) {
+			cuentaOrigen.m_saldo -= monto;
+			cuentaDestino.m_saldo += monto;
+			std::cout << "Transferencia de " << monto << " de la cuenta "
+				<< cuentaOrigen.m_numeroCuenta << " a la cuenta " << cuentaDestino.m_numeroCuenta
+				<< " realizada con exito." << " Numero de Referencia: " << noRef << "\n";
 		}
 		else {
-			std::cout << "no hay fondos suficientes" << "\n";
+			std::cout << "Error en la transferencia: monto invalido o saldo insuficiente.\n";
 		}
-	}
-	
-protected:
-	int numero_cuenta;
-	void depositar(double cantidad) {
-		saldo += cantidad;
 	}
 
 private:
-	double saldo;
-
-	double tasa_interes() const {
-		return 0.05;
+	double
+		calcularInteres(double tasaInteres) {
+		return m_saldo * tasaInteres / 100.0;
 	}
+
+public:
+	std::string m_propietario;
+protected:
+	int m_numeroCuenta;
+private:
+	double m_saldo;
+
 };

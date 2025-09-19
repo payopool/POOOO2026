@@ -1,22 +1,29 @@
 #pragma once
 #include"Header.h"
 #include"banco.h"
-class usuarioBanc {
+class
+	UsuarioBancario {
 public:
-	usuarioBanc(Banco cuenta){
-		cuenta = cuenta;
-		m_nombre_ = cuenta.propetario;
+	UsuarioBancario(CuentaBancaria cuenta) {
+		m_cuenta = cuenta;
+		m_nombreUsuario = m_cuenta.m_propietario;
 		m_antiguedad.getFecha();
-		cashback = cuenta.getSaldo() * 0.01;
-		M_uniquepoints = 0;
+		m_cashBack = m_cuenta.consultarSaldo() * 0.01; // 1% por defecto
+		m_uniquePoints = 5;
 	}
-	~usuarioBanc() = default;
+
+	~UsuarioBancario() = default;
+
+	CuentaBancaria&
+		getCuenta() {
+		return m_cuenta;
+	}
+
 private:
-	Banco cuenta;
-	std::string m_nombre_;
-	int idusuario;
+	CuentaBancaria m_cuenta;
+	std::string m_nombreUsuario;
+	std::vector<int> m_historialTransacciones;
 	Fecha m_antiguedad;
-	std::vector<int> m_historial;
-	int cashback;
-	int M_uniquepoints;
+	int m_cashBack; // 1% 3% 5%
+	int m_uniquePoints;
 };
