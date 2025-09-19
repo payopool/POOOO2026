@@ -67,6 +67,9 @@ int main() {
 		std::cout << "Despues de la transferencia:\n";
 		Payo.getCuenta().consultarSaldo();
 		Goku.getCuenta().consultarSaldo();
+		std::cout << "documentacion de los usuarios:\n";
+		Payo.documentacion();
+		Goku.documentacion();
 	
 		
 		return 0;

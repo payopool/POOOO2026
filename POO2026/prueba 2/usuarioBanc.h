@@ -18,6 +18,16 @@ public:
 		getCuenta() {
 		return m_cuenta;
 	}
+	void setCashBack(double cashBack) {
+		m_cashBack = cashBack;
+	}
+	void documentacion() {
+		std::cout << "Nombre del usuario: " << m_nombreUsuario << "\n";
+		std::cout << "Numero de cuenta: " << m_cuenta.getNumeroCuenta() << "\n";
+		std::cout << "Antiguedad: " << m_antiguedad.toString() << "\n";
+		std::cout << "CashBack actual: " << m_cashBack << "\n";
+		std::cout << "Unique Points: " << m_uniquePoints << "\n";
+	}
 
 private:
 	CuentaBancaria m_cuenta;

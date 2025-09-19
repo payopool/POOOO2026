@@ -23,3 +23,4 @@ struct Fecha {
 		return std::to_string(dia) + "/" + std::to_string(mes) + "/" + std::to_string(year);
 	}
 };
+enum TRADE { SUPERMERCADO =1 , RESTAURANTE =2, TIENDA_ELECTRONICA=3,FARMACIOA=4 };

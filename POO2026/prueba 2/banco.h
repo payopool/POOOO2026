@@ -44,6 +44,11 @@ protected:
 			std::cout << "Error en la transferencia: monto invalido o saldo insuficiente.\n";
 		}
 	}
+	void getdocumentacion() {
+		std::cout << "Propietario: " << m_propietario << "\n";
+		std::cout << "Numero de cuenta: " << m_numeroCuenta << "\n";
+		std::cout << "Saldo: " << m_saldo << "\n";
+	}
 
 private:
 	double
