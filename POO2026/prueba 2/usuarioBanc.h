@@ -27,6 +27,7 @@ public:
 		std::cout << "Antiguedad: " << m_antiguedad.toString() << "\n";
 		std::cout << "CashBack actual: " << m_cashBack << "\n";
 		std::cout << "Unique Points: " << m_uniquePoints << "\n";
+	
 	}
 
 private:

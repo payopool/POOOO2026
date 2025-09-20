@@ -69,7 +69,10 @@ int main() {
 		Goku.getCuenta().consultarSaldo();
 		std::cout << "documentacion de los usuarios:\n";
 		Payo.documentacion();
+		std::cout << "\n";
 		Goku.documentacion();
+		std::cout << "\n";
+
 	
 		
 		return 0;
