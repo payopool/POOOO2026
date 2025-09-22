@@ -152,6 +152,7 @@
     <ClInclude Include="Header.h" />
     <ClInclude Include="inventory.h" />
     <ClInclude Include="item.h" />
+    <ClInclude Include="productos.h" />
     <ClInclude Include="rectangulo.h" />
     <ClInclude Include="usuarioBanc.h" />
   </ItemGroup>

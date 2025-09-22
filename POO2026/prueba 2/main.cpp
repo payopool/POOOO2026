@@ -7,6 +7,8 @@
 #include"banco.h"
 #include"usuarioBanc.h"
 #include"Banquito.h"
+#include"productos.h"
+
 
 
 class
@@ -73,7 +75,17 @@ int main() {
 		Goku.documentacion();
 		std::cout << "\n";
 
-	
+		productos prod1(500, "Leche", 20.5, fecha, "Lala", fecha, "", "", "Leche de vaca entera",6789);
+		prod1.mostrarinfo(ALIMENTACION);
+		std::cout << "\n";
+		productos prod2(0, "Pantalon", 350.0, fecha, "Levis", fecha, "501", "Pantalon de mezclilla azul", "", 1234);
+		prod2.mostrarinfo(ROPA);
+		std::cout << "\n";
+		productos prod3(0, "Telefono", 15000.0, fecha, "Samsung", fecha, "Galaxy S21", "Telefono inteligente de ultima generacion", "", 5678);
+		prod3.mostrarinfo(ELECTRONICA);
+		std::cout << "\n";
+		productos prod4(200, "Jabon", 15.0, fecha, "Dove", fecha, "", "", "Jabon antibacterial", 4321);
+		prod4.mostrarinfo(HIGIENE);
 		
 		return 0;
 };
