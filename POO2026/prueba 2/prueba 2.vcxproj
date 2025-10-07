@@ -142,19 +142,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="banco.h" />
     <ClInclude Include="Banquito.h" />
     <ClInclude Include="circulo.h" />
     <ClInclude Include="estudiantes.h" />
     <ClInclude Include="Header.h" />
+    <ClInclude Include="include\programingPa\miSingleton.h" />
+    <ClInclude Include="include\programingPa\RegistroActividad.h" />
     <ClInclude Include="inventory.h" />
     <ClInclude Include="item.h" />
     <ClInclude Include="productos.h" />
     <ClInclude Include="rectangulo.h" />
     <ClInclude Include="usuarioBanc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main_2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
