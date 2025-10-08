@@ -18,46 +18,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="item.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="inventory.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="rectangulo.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="circulo.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="estudiantes.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="banco.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="usuarioBanc.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Banquito.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="productos.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="include\programingPa\miSingleton.h">
       <Filter>Archivos de encabezado\programingPa</Filter>
     </ClInclude>
     <ClInclude Include="include\programingPa\RegistroActividad.h">
       <Filter>Archivos de encabezado\programingPa</Filter>
     </ClInclude>
+    <ClInclude Include="include\programingPa\factoryMethod.h">
+      <Filter>Archivos de encabezado\programingPa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Header.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Vehiculo.h">
+      <Filter>Archivos de encabezado\programingPa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\FactoriaVeiculo.h">
+      <Filter>Archivos de encabezado\programingPa</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main_2.cpp">
-      <Filter>Archivos de recursos</Filter>
+    <ClCompile Include="source\main_2.cpp">
+      <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
