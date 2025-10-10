@@ -143,6 +143,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="include\Header.h" />
+    <ClInclude Include="include\programingPa\AbstractFactory\A.h" />
+    <ClInclude Include="include\programingPa\AbstractFactory\A1.h" />
+    <ClInclude Include="include\programingPa\AbstractFactory\AbtractFactory.h" />
+    <ClInclude Include="include\programingPa\AbstractFactory\B.h" />
+    <ClInclude Include="include\programingPa\AbstractFactory\B1.h" />
+    <ClInclude Include="include\programingPa\AbstractFactory\concretFactory.h" />
     <ClInclude Include="include\programingPa\FactoriaVeiculo.h" />
     <ClInclude Include="include\programingPa\factoryMethod.h" />
     <ClInclude Include="include\programingPa\miSingleton.h" />
@@ -151,6 +157,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main_2.cpp" />
+    <ClCompile Include="source\ProgramingPa\AbstractFactory\a1cpp.cpp" />
+    <ClCompile Include="source\ProgramingPa\AbstractFactory\b1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

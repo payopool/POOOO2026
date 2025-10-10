@@ -16,6 +16,15 @@
     <Filter Include="Archivos de encabezado\programingPa">
       <UniqueIdentifier>{96e258fa-965a-4fe7-956b-d78988f05d59}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\programingPa\AbstractFactory">
+      <UniqueIdentifier>{cfe221b4-42a0-46f7-a6b6-338e7122fc5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\ProgramingPa">
+      <UniqueIdentifier>{e89af279-36f7-4e47-a6c1-2a3f684d19b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\ProgramingPa\AbstractFactory">
+      <UniqueIdentifier>{0a3d170a-75ab-4019-b87f-b1b8c78c9327}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\programingPa\miSingleton.h">
@@ -36,10 +45,34 @@
     <ClInclude Include="include\programingPa\FactoriaVeiculo.h">
       <Filter>Archivos de encabezado\programingPa</Filter>
     </ClInclude>
+    <ClInclude Include="include\programingPa\AbstractFactory\A1.h">
+      <Filter>Archivos de encabezado\programingPa\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\AbstractFactory\B1.h">
+      <Filter>Archivos de encabezado\programingPa\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\AbstractFactory\A.h">
+      <Filter>Archivos de encabezado\programingPa\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\AbstractFactory\B.h">
+      <Filter>Archivos de encabezado\programingPa\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\AbstractFactory\concretFactory.h">
+      <Filter>Archivos de encabezado\programingPa\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\AbstractFactory\AbtractFactory.h">
+      <Filter>Archivos de encabezado\programingPa\AbstractFactory</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main_2.cpp">
       <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgramingPa\AbstractFactory\a1cpp.cpp">
+      <Filter>Archivos de origen\ProgramingPa\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgramingPa\AbstractFactory\b1.cpp">
+      <Filter>Archivos de origen\ProgramingPa\AbstractFactory</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

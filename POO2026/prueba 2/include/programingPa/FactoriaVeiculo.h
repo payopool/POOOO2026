@@ -4,7 +4,7 @@
 // Clase base abstracta para factorías
 class FactoriaVehiculos {
 public:
-  virtual Vehiculo* crearVehiculo() const = 0; // Método virtual puro
+  virtual Vehiculo* crearVehiculo() const = 0; 
   virtual ~FactoriaVehiculos() = default;
 };
 

@@ -4,6 +4,7 @@
 #include "programingPa/factoryMethod.h"
 #include "programingPa/Vehiculo.h"
 #include "programingPa/FactoriaVeiculo.h"
+#include"programingPa/AbstractFactory/concretFactory.h"
 MiSingleton* MiSingleton::instancia = nullptr;
 
 int main() {
@@ -33,5 +34,17 @@ int main() {
 	Vehiculo* miCoche = factoriaCoche.crearVehiculo();
 	std::cout << miCoche->descripcion() << "\n";
 	delete miCoche;
+
+	FabricaAbstracta* fabrica = new FabricaConcreta1();
+	ProductoA* productoA = fabrica->crearProductoA();
+	ProductoB* productoB = fabrica->crearProductoB();
+
+	productoA->operacionA();
+	productoB->operacionB();
+
+	delete productoA;
+	delete productoB;
+
+
   return 0;
 }
