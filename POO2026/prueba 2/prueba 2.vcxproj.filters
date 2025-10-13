@@ -45,22 +45,10 @@
     <ClInclude Include="include\programingPa\FactoriaVeiculo.h">
       <Filter>Archivos de encabezado\programingPa</Filter>
     </ClInclude>
-    <ClInclude Include="include\programingPa\AbstractFactory\A1.h">
+    <ClInclude Include="include\programingPa\AbstractFactory\Mueble.h">
       <Filter>Archivos de encabezado\programingPa\AbstractFactory</Filter>
     </ClInclude>
-    <ClInclude Include="include\programingPa\AbstractFactory\B1.h">
-      <Filter>Archivos de encabezado\programingPa\AbstractFactory</Filter>
-    </ClInclude>
-    <ClInclude Include="include\programingPa\AbstractFactory\A.h">
-      <Filter>Archivos de encabezado\programingPa\AbstractFactory</Filter>
-    </ClInclude>
-    <ClInclude Include="include\programingPa\AbstractFactory\B.h">
-      <Filter>Archivos de encabezado\programingPa\AbstractFactory</Filter>
-    </ClInclude>
-    <ClInclude Include="include\programingPa\AbstractFactory\concretFactory.h">
-      <Filter>Archivos de encabezado\programingPa\AbstractFactory</Filter>
-    </ClInclude>
-    <ClInclude Include="include\programingPa\AbstractFactory\AbtractFactory.h">
+    <ClInclude Include="include\programingPa\AbstractFactory\Factorymuebles.h">
       <Filter>Archivos de encabezado\programingPa\AbstractFactory</Filter>
     </ClInclude>
   </ItemGroup>
@@ -72,6 +60,9 @@
       <Filter>Archivos de origen\ProgramingPa\AbstractFactory</Filter>
     </ClCompile>
     <ClCompile Include="source\ProgramingPa\AbstractFactory\b1.cpp">
+      <Filter>Archivos de origen\ProgramingPa\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgramingPa\AbstractFactory\mueble.cpp">
       <Filter>Archivos de origen\ProgramingPa\AbstractFactory</Filter>
     </ClCompile>
   </ItemGroup>

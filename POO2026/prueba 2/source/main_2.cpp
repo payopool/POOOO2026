@@ -5,6 +5,9 @@
 #include "programingPa/Vehiculo.h"
 #include "programingPa/FactoriaVeiculo.h"
 #include"programingPa/AbstractFactory/concretFactory.h"
+#include"ProgramingPa/AbstractFactory/Mueble.h"
+#include"programingPa/AbstractFactory/Factorymuebles.h"
+
 MiSingleton* MiSingleton::instancia = nullptr;
 
 int main() {
@@ -44,6 +47,23 @@ int main() {
 
 	delete productoA;
 	delete productoB;
+	delete fabrica;
+
+
+	Factorymuebles* factoriaSilla = new Factorysilla();
+	mueble* miSilla = factoriaSilla->crearMueble(); // crear una silla
+	miSilla->descripcion(); // llamar al metodo descripcion 
+	miSilla->color();
+	delete miSilla; // liberar memoria
+	delete factoriaSilla;
+
+	Factorymuebles* factoriaMesa = new Factorymesa();
+	mueble* miMesa = factoriaMesa->crearMueble();
+	miMesa->descripcion();
+	miMesa->color();
+	delete miMesa;
+	delete factoriaMesa;
+
 
 
   return 0;
