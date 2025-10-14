@@ -16,54 +16,42 @@
     <Filter Include="Archivos de encabezado\programingPa">
       <UniqueIdentifier>{96e258fa-965a-4fe7-956b-d78988f05d59}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Archivos de encabezado\programingPa\AbstractFactory">
-      <UniqueIdentifier>{cfe221b4-42a0-46f7-a6b6-338e7122fc5a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Archivos de origen\ProgramingPa">
       <UniqueIdentifier>{e89af279-36f7-4e47-a6c1-2a3f684d19b2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Archivos de origen\ProgramingPa\AbstractFactory">
       <UniqueIdentifier>{0a3d170a-75ab-4019-b87f-b1b8c78c9327}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\programingPa\Builder">
+      <UniqueIdentifier>{6763ed56-6df8-4518-85b3-152a72856bda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\ProgramingPa\Builder">
+      <UniqueIdentifier>{ecaca919-c515-4808-b183-a10017bb5156}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\programingPa\miSingleton.h">
-      <Filter>Archivos de encabezado\programingPa</Filter>
-    </ClInclude>
-    <ClInclude Include="include\programingPa\RegistroActividad.h">
-      <Filter>Archivos de encabezado\programingPa</Filter>
-    </ClInclude>
-    <ClInclude Include="include\programingPa\factoryMethod.h">
-      <Filter>Archivos de encabezado\programingPa</Filter>
-    </ClInclude>
     <ClInclude Include="include\Header.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="include\programingPa\Vehiculo.h">
-      <Filter>Archivos de encabezado\programingPa</Filter>
+    <ClInclude Include="include\programingPa\Builder\Builder.h">
+      <Filter>Archivos de encabezado\programingPa\Builder</Filter>
     </ClInclude>
-    <ClInclude Include="include\programingPa\FactoriaVeiculo.h">
-      <Filter>Archivos de encabezado\programingPa</Filter>
+    <ClInclude Include="include\programingPa\Builder\BuilderConcret.h">
+      <Filter>Archivos de encabezado\programingPa\Builder</Filter>
     </ClInclude>
-    <ClInclude Include="include\programingPa\AbstractFactory\Mueble.h">
-      <Filter>Archivos de encabezado\programingPa\AbstractFactory</Filter>
+    <ClInclude Include="include\programingPa\Builder\Producto.h">
+      <Filter>Archivos de encabezado\programingPa\Builder</Filter>
     </ClInclude>
-    <ClInclude Include="include\programingPa\AbstractFactory\Factorymuebles.h">
-      <Filter>Archivos de encabezado\programingPa\AbstractFactory</Filter>
+    <ClInclude Include="include\programingPa\Builder\Director.h">
+      <Filter>Archivos de encabezado\programingPa\Builder</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="source\main_2.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="source\ProgramingPa\Main3.cpp">
+      <Filter>Archivos de origen\ProgramingPa</Filter>
     </ClCompile>
-    <ClCompile Include="source\ProgramingPa\AbstractFactory\a1cpp.cpp">
-      <Filter>Archivos de origen\ProgramingPa\AbstractFactory</Filter>
-    </ClCompile>
-    <ClCompile Include="source\ProgramingPa\AbstractFactory\b1.cpp">
-      <Filter>Archivos de origen\ProgramingPa\AbstractFactory</Filter>
-    </ClCompile>
-    <ClCompile Include="source\ProgramingPa\AbstractFactory\mueble.cpp">
-      <Filter>Archivos de origen\ProgramingPa\AbstractFactory</Filter>
+    <ClCompile Include="source\ProgramingPa\Builder\BuilderConcret.cpp">
+      <Filter>Archivos de origen\ProgramingPa\Builder</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
