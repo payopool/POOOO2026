@@ -28,6 +28,9 @@
     <Filter Include="Archivos de origen\ProgramingPa\Builder">
       <UniqueIdentifier>{ecaca919-c515-4808-b183-a10017bb5156}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\programingPa\Prototype">
+      <UniqueIdentifier>{8298f5ba-1b57-47cd-923f-0c21bb6e76b1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Header.h">
@@ -56,6 +59,12 @@
     </ClInclude>
     <ClInclude Include="include\programingPa\Builder\vegetariana.h">
       <Filter>Archivos de encabezado\programingPa\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Prototype\Prototype.h">
+      <Filter>Archivos de encabezado\programingPa\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Prototype\ConcretPrototipe.h">
+      <Filter>Archivos de encabezado\programingPa\Prototype</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

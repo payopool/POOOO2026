@@ -151,6 +151,8 @@
     <ClInclude Include="include\programingPa\Builder\Pizza.h" />
     <ClInclude Include="include\programingPa\Builder\Producto.h" />
     <ClInclude Include="include\programingPa\Builder\vegetariana.h" />
+    <ClInclude Include="include\programingPa\Prototype\ConcretPrototipe.h" />
+    <ClInclude Include="include\programingPa\Prototype\Prototype.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\ProgramingPa\Builder\BuilderConcret.cpp" />

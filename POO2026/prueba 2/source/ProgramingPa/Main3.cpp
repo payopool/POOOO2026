@@ -6,6 +6,8 @@
 #include"programingPa/Builder/Pizza.h"
 #include"programingPa/Builder/ConstructorPizza.h"
 #include"programingPa/Builder/vegetariana.h"
+#include"programingPa/Prototype/Prototype.h"
+#include"programingPa/Prototype/ConcretPrototipe.h"
 
 int main() {
 	Builder* builder = new BuilderConcret();
@@ -22,10 +24,12 @@ int main() {
 	constructorPizza->buildIngedientes();
 	Pizza* pizza = constructorPizza->getPizza();
 	pizza->show();
-	delete constructorPizza;
+
 	delete pizza;
+
 	ConstructorPizza* constructorPizza2 = new BuilderVegetariana();
-	constructorPizza2->addIngrediente(INGREDIENTES::pina);
+	constructorPizza2->addIngrediente(INGREDIENTES::albaca);
+	constructorPizza2->addIngrediente(INGREDIENTES::aceite);
 	constructorPizza2->buildIngedientes();
 	Pizza* pizza2 = constructorPizza2->getPizza();
 	pizza2->show();
@@ -33,6 +37,21 @@ int main() {
 	delete pizza2;
 
 	
+	Prototype* original = new ConcretPrototipe();
+	original->config("Original");
+	Prototype* copia = original->clone();
+	copia->config("Copia del original");
+	original->info();
+	copia->info();
+	delete original;
+	delete copia;
+
+
+
+
+
+
+
 
 
 		return 0;

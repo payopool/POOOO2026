@@ -1,6 +1,6 @@
 #pragma once
 #include"Header.h"
-enum INGREDIENTES { masa = 1, salsa = 2, queso = 3, pepperoni = 4, jamon = 5, pina = 6 , albaca =7, aceite= 8 };
+enum INGREDIENTES { masa = 1, salsa = 2, queso = 3, pepperoni = 4, jamon = 5, pina = 6 , albaca =7, aceite= 8  };
 
 
 class Pizza {
