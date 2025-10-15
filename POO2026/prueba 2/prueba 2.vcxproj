@@ -145,8 +145,12 @@
     <ClInclude Include="include\Header.h" />
     <ClInclude Include="include\programingPa\Builder\Builder.h" />
     <ClInclude Include="include\programingPa\Builder\BuilderConcret.h" />
+    <ClInclude Include="include\programingPa\Builder\ConstructorPizza.h" />
     <ClInclude Include="include\programingPa\Builder\Director.h" />
+    <ClInclude Include="include\programingPa\Builder\hawaiana.h" />
+    <ClInclude Include="include\programingPa\Builder\Pizza.h" />
     <ClInclude Include="include\programingPa\Builder\Producto.h" />
+    <ClInclude Include="include\programingPa\Builder\vegetariana.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\ProgramingPa\Builder\BuilderConcret.cpp" />

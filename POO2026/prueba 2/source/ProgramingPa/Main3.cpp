@@ -2,6 +2,10 @@
 #include"programingPa/Builder/BuilderConcret.h"
 #include"programingPa/Builder/Director.h"
 #include"programingPa/Builder/Builder.h"
+#include"programingPa/Builder/hawaiana.h"
+#include"programingPa/Builder/Pizza.h"
+#include"programingPa/Builder/ConstructorPizza.h"
+#include"programingPa/Builder/vegetariana.h"
 
 int main() {
 	Builder* builder = new BuilderConcret();
@@ -12,6 +16,24 @@ int main() {
 	delete producto;
 	delete director;
 	delete builder;
+
+	ConstructorPizza* constructorPizza = new BuilderHawaiana();
+	constructorPizza->addIngrediente(INGREDIENTES :: pepperoni);
+	constructorPizza->buildIngedientes();
+	Pizza* pizza = constructorPizza->getPizza();
+	pizza->show();
+	delete constructorPizza;
+	delete pizza;
+	ConstructorPizza* constructorPizza2 = new BuilderVegetariana();
+	constructorPizza2->addIngrediente(INGREDIENTES::pina);
+	constructorPizza2->buildIngedientes();
+	Pizza* pizza2 = constructorPizza2->getPizza();
+	pizza2->show();
+	delete constructorPizza2;
+	delete pizza2;
+
+	
+
 
 		return 0;
 }

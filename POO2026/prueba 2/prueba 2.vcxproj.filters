@@ -45,6 +45,18 @@
     <ClInclude Include="include\programingPa\Builder\Director.h">
       <Filter>Archivos de encabezado\programingPa\Builder</Filter>
     </ClInclude>
+    <ClInclude Include="include\programingPa\Builder\Pizza.h">
+      <Filter>Archivos de encabezado\programingPa\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Builder\ConstructorPizza.h">
+      <Filter>Archivos de encabezado\programingPa\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Builder\hawaiana.h">
+      <Filter>Archivos de encabezado\programingPa\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Builder\vegetariana.h">
+      <Filter>Archivos de encabezado\programingPa\Builder</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\ProgramingPa\Main3.cpp">
