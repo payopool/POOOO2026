@@ -152,6 +152,10 @@
     <ClInclude Include="include\programingPa\Builder\Producto.h" />
     <ClInclude Include="include\programingPa\Builder\vegetariana.h" />
     <ClInclude Include="include\programingPa\Prototype\ConcretPrototipe.h" />
+    <ClInclude Include="include\programingPa\Prototype\Docimagen.h" />
+    <ClInclude Include="include\programingPa\Prototype\DocPrototype.h" />
+    <ClInclude Include="include\programingPa\Prototype\Doctext.h" />
+    <ClInclude Include="include\programingPa\Prototype\Documento.h" />
     <ClInclude Include="include\programingPa\Prototype\Prototype.h" />
   </ItemGroup>
   <ItemGroup>

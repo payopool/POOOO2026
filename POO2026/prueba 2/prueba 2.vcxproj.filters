@@ -31,6 +31,9 @@
     <Filter Include="Archivos de encabezado\programingPa\Prototype">
       <UniqueIdentifier>{8298f5ba-1b57-47cd-923f-0c21bb6e76b1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de origen\ProgramingPa\prototype">
+      <UniqueIdentifier>{b6e65faa-309f-43df-91e3-cb38fd19ab5e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Header.h">
@@ -64,6 +67,18 @@
       <Filter>Archivos de encabezado\programingPa\Prototype</Filter>
     </ClInclude>
     <ClInclude Include="include\programingPa\Prototype\ConcretPrototipe.h">
+      <Filter>Archivos de encabezado\programingPa\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Prototype\Documento.h">
+      <Filter>Archivos de encabezado\programingPa\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Prototype\DocPrototype.h">
+      <Filter>Archivos de encabezado\programingPa\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Prototype\Doctext.h">
+      <Filter>Archivos de encabezado\programingPa\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Prototype\Docimagen.h">
       <Filter>Archivos de encabezado\programingPa\Prototype</Filter>
     </ClInclude>
   </ItemGroup>

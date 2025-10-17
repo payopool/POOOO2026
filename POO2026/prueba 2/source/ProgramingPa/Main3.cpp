@@ -8,6 +8,12 @@
 #include"programingPa/Builder/vegetariana.h"
 #include"programingPa/Prototype/Prototype.h"
 #include"programingPa/Prototype/ConcretPrototipe.h"
+#include"programingPa/Prototype/Documento.h"
+#include "programingPa/Prototype/DocPrototype.h"
+#include"programingPa/Prototype/DocText.h"
+#include"programingPa/Prototype/Docimagen.h"
+
+
 
 int main() {
 	Builder* builder = new BuilderConcret();
@@ -46,8 +52,24 @@ int main() {
 	delete original;
 	delete copia;
 
+	Docimagen* docImgOriginal = new Docimagen();
+	docImgOriginal->config("Foto de vacaciones");
+	DocPrototype* docImgCopia = docImgOriginal->clone();
+	docImgCopia->config("Copia de la foto de vacaciones");
+	docImgOriginal->mostrarCon();
+	docImgCopia->mostrarCon();
+	delete docImgOriginal;
+	delete docImgCopia;
+	DocText* docTextOriginal = new DocText();
+	docTextOriginal->config("Documento importante");
+	DocPrototype* docTextCopia = docTextOriginal->clone();
+	docTextCopia->config("Copia del documento importante");
+	docTextOriginal->mostrarCon();
+	docTextCopia->mostrarCon();
+	delete docTextOriginal;
+	delete docTextCopia;
 
-
+		
 
 
 
