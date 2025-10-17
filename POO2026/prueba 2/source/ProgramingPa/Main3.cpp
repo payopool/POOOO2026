@@ -12,6 +12,14 @@
 #include "programingPa/Prototype/DocPrototype.h"
 #include"programingPa/Prototype/DocText.h"
 #include"programingPa/Prototype/Docimagen.h"
+#include"programingPa/adapter/InterfasVieja.h"
+#include"programingPa/adapter/interfaNew.h"
+#include"programingPa/adapter/AdapterInterfaz.h"
+#include "programingPa/adapter/Adapterdibujos.h"
+#include"programingPa/adapter/Dibujable.h"
+#include"programingPa/adapter/Circulodibujo.h"
+#include "programingPa/adapter/CuadradoDibujo.h"
+
 
 
 
@@ -24,6 +32,8 @@ int main() {
 	delete producto;
 	delete director;
 	delete builder;
+	
+	std::cout << "\n";
 
 	ConstructorPizza* constructorPizza = new BuilderHawaiana();
 	constructorPizza->addIngrediente(INGREDIENTES :: pepperoni);
@@ -42,6 +52,7 @@ int main() {
 	delete constructorPizza2;
 	delete pizza2;
 
+	std::cout << "\n";
 	
 	Prototype* original = new ConcretPrototipe();
 	original->config("Original");
@@ -51,6 +62,8 @@ int main() {
 	copia->info();
 	delete original;
 	delete copia;
+
+	std::cout << "\n";
 
 	Docimagen* docImgOriginal = new Docimagen();
 	docImgOriginal->config("Foto de vacaciones");
@@ -69,10 +82,29 @@ int main() {
 	delete docTextOriginal;
 	delete docTextCopia;
 
-		
+	std::cout << "\n";
 
+	//crear instancia de la vieja interfaz
+	InterfaOld* viejaInterfaz = new InterfaOld();
+	InterfaNew* adaptador = new AdapterInterfaz(viejaInterfaz);
+	// usar el adaptador para llamar al metodo nuevo
+	adaptador->metodoNuevo();
+	// liberar memoria
+	delete adaptador;
+	delete viejaInterfaz;
 
+	std::cout << "\n";
 
+	CirculoDibujo* circulo = new CirculoDibujo();
+	Dibujable* adapterDibujo = new AdapterDibujo(circulo);
+	adapterDibujo->dibujar();
+	delete adapterDibujo;
+	delete circulo;
+	CuadroDibujo* cuadrado = new CuadroDibujo();
+	Dibujable* adapterDibujoCuadrado = new AdapterDibujoCuadrado(cuadrado);
+	adapterDibujoCuadrado->dibujar();
+	delete adapterDibujoCuadrado;
+	delete cuadrado;
 
 
 

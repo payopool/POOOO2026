@@ -8,7 +8,7 @@ public:
   ~DocText() = default;
 
   DocPrototype* clone() const override {
-    DocText* copia = new DocText(*this);
+    DocText* copia = new DocText(*this); //  crea una copia exacta usando costructor 
     copia->config(contenido);
     return copia;
   }

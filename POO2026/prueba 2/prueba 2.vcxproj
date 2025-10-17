@@ -143,6 +143,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="include\Header.h" />
+    <ClInclude Include="include\programingPa\adapter\Adapterdibujos.h" />
+    <ClInclude Include="include\programingPa\adapter\AdapterInterfaz.h" />
+    <ClInclude Include="include\programingPa\adapter\Circulodibujo.h" />
+    <ClInclude Include="include\programingPa\adapter\CuadradoDibujo.h" />
+    <ClInclude Include="include\programingPa\adapter\Dibujable.h" />
+    <ClInclude Include="include\programingPa\adapter\interfaNew.h" />
+    <ClInclude Include="include\programingPa\adapter\InterfasVieja.h" />
     <ClInclude Include="include\programingPa\Builder\Builder.h" />
     <ClInclude Include="include\programingPa\Builder\BuilderConcret.h" />
     <ClInclude Include="include\programingPa\Builder\ConstructorPizza.h" />

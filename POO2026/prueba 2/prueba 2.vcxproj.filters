@@ -34,6 +34,9 @@
     <Filter Include="Archivos de origen\ProgramingPa\prototype">
       <UniqueIdentifier>{b6e65faa-309f-43df-91e3-cb38fd19ab5e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\programingPa\adapter">
+      <UniqueIdentifier>{3f1b13b4-c922-4f89-90f8-9fc45d1003e5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Header.h">
@@ -80,6 +83,27 @@
     </ClInclude>
     <ClInclude Include="include\programingPa\Prototype\Docimagen.h">
       <Filter>Archivos de encabezado\programingPa\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\adapter\interfaNew.h">
+      <Filter>Archivos de encabezado\programingPa\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\adapter\InterfasVieja.h">
+      <Filter>Archivos de encabezado\programingPa\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\adapter\AdapterInterfaz.h">
+      <Filter>Archivos de encabezado\programingPa\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\adapter\Circulodibujo.h">
+      <Filter>Archivos de encabezado\programingPa\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\adapter\Dibujable.h">
+      <Filter>Archivos de encabezado\programingPa\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\adapter\Adapterdibujos.h">
+      <Filter>Archivos de encabezado\programingPa\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\adapter\CuadradoDibujo.h">
+      <Filter>Archivos de encabezado\programingPa\adapter</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
