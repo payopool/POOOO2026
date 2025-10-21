@@ -158,6 +158,11 @@
     <ClInclude Include="include\programingPa\Builder\Pizza.h" />
     <ClInclude Include="include\programingPa\Builder\Producto.h" />
     <ClInclude Include="include\programingPa\Builder\vegetariana.h" />
+    <ClInclude Include="include\programingPa\Decorator\Componente.h" />
+    <ClInclude Include="include\programingPa\Decorator\ConcretosComponente.h" />
+    <ClInclude Include="include\programingPa\Decorator\DecoradorConA.h" />
+    <ClInclude Include="include\programingPa\Decorator\DecoradorConB.h" />
+    <ClInclude Include="include\programingPa\Decorator\Decorator.h" />
     <ClInclude Include="include\programingPa\Prototype\ConcretPrototipe.h" />
     <ClInclude Include="include\programingPa\Prototype\Docimagen.h" />
     <ClInclude Include="include\programingPa\Prototype\DocPrototype.h" />

@@ -19,6 +19,9 @@
 #include"programingPa/adapter/Dibujable.h"
 #include"programingPa/adapter/Circulodibujo.h"
 #include "programingPa/adapter/CuadradoDibujo.h"
+#include "programingPa/Decorator/ConcretosComponente.h"
+#include"programingPa/Decorator/DecoradorConA.h"
+#include"programingPa/Decorator/DecoradorConB.h"
 
 
 
@@ -106,6 +109,17 @@ int main() {
 	delete adapterDibujoCuadrado;
 	delete cuadrado;
 
+	std::cout<<"\n";
+
+	Componente* componente = new ConcretComponente();
+	Componente* decoradorA = new DecoradorConA(componente);
+	Componente* decoradorB = new DecoradorConB(decoradorA);
+
+	decoradorB->operacion();
+
+	delete componente;
+	delete decoradorA;
+	delete decoradorB;
 
 
 		return 0;

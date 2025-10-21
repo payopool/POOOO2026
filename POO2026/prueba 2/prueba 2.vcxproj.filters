@@ -37,6 +37,9 @@
     <Filter Include="Archivos de encabezado\programingPa\adapter">
       <UniqueIdentifier>{3f1b13b4-c922-4f89-90f8-9fc45d1003e5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\programingPa\Decorator">
+      <UniqueIdentifier>{7e92901c-1a28-470a-835a-23d66036909b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Header.h">
@@ -104,6 +107,21 @@
     </ClInclude>
     <ClInclude Include="include\programingPa\adapter\CuadradoDibujo.h">
       <Filter>Archivos de encabezado\programingPa\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Decorator\Componente.h">
+      <Filter>Archivos de encabezado\programingPa\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Decorator\Decorator.h">
+      <Filter>Archivos de encabezado\programingPa\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Decorator\DecoradorConA.h">
+      <Filter>Archivos de encabezado\programingPa\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Decorator\ConcretosComponente.h">
+      <Filter>Archivos de encabezado\programingPa\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Decorator\DecoradorConB.h">
+      <Filter>Archivos de encabezado\programingPa\Decorator</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
