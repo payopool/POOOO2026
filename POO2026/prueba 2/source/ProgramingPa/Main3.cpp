@@ -22,6 +22,10 @@
 #include "programingPa/Decorator/ConcretosComponente.h"
 #include"programingPa/Decorator/DecoradorConA.h"
 #include"programingPa/Decorator/DecoradorConB.h"
+#include"programingPa/Decorator/DecoratorLeche.h"
+#include"programingPa/Decorator/AzucarDecorator.h"
+#include"programingPa/Decorator/Condimento.h"
+
 
 
 
@@ -120,6 +124,15 @@ int main() {
 	delete componente;
 	delete decoradorA;
 	delete decoradorB;
+	std::cout << "\n";
+	Cafe* cafe = new Condimento();
+	Cafe* cafeConLeche = new DecoratorLeche(cafe);
+	Cafe* cafeConLecheYAzucar = new DecoratorAzucar(cafeConLeche);
+	cafeConLecheYAzucar->prepararCafe();
+	delete cafe;
+	delete cafeConLeche;
+	delete cafeConLecheYAzucar;
+
 
 
 		return 0;

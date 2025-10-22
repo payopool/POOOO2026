@@ -123,6 +123,21 @@
     <ClInclude Include="include\programingPa\Decorator\DecoradorConB.h">
       <Filter>Archivos de encabezado\programingPa\Decorator</Filter>
     </ClInclude>
+    <ClInclude Include="include\programingPa\Decorator\Cafe.h">
+      <Filter>Archivos de encabezado\programingPa\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Decorator\Condimento.h">
+      <Filter>Archivos de encabezado\programingPa\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Decorator\DecoratorCafe.h">
+      <Filter>Archivos de encabezado\programingPa\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Decorator\DecoratorLeche.h">
+      <Filter>Archivos de encabezado\programingPa\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Decorator\AzucarDecorator.h">
+      <Filter>Archivos de encabezado\programingPa\Decorator</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\ProgramingPa\Main3.cpp">
