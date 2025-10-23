@@ -25,6 +25,11 @@
 #include"programingPa/Decorator/DecoratorLeche.h"
 #include"programingPa/Decorator/AzucarDecorator.h"
 #include"programingPa/Decorator/Condimento.h"
+#include"programingPa/composite/Hoja.h"
+#include"programingPa/composite/composite.h"
+
+
+
 
 
 
@@ -124,7 +129,9 @@ int main() {
 	delete componente;
 	delete decoradorA;
 	delete decoradorB;
+
 	std::cout << "\n";
+
 	Cafe* cafe = new Condimento();
 	Cafe* cafeConLeche = new DecoratorLeche(cafe);
 	Cafe* cafeConLecheYAzucar = new DecoratorAzucar(cafeConLeche);
@@ -132,6 +139,24 @@ int main() {
 	delete cafe;
 	delete cafeConLeche;
 	delete cafeConLecheYAzucar;
+
+	std::cout << "\n";
+
+	Hoja* hoja1 = new Hoja();
+	Hoja* hoja2 = new Hoja();
+	Composite* composite = new Composite();
+	composite->add(hoja1);
+	composite->add(hoja2);
+	composite->operacion();
+	delete hoja1;
+	delete hoja2;
+	delete composite;
+	
+
+		
+	
+
+		
 
 
 
