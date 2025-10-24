@@ -3,27 +3,32 @@
 #include"programingPa/composite/Sistema.h"
 #include"programingPa/composite/Archivo.h"
 #include"programingPa/composite/carpeta.h"
-class sistemaArchivo :public virtual archivo {
+class sistemaArchivo :public  archivo {
 	public:
+		sistemaArchivo(const std::string& nombreArchivo) : nombre(nombreArchivo) {}
+		sistemaArchivo() = default;
+		~sistemaArchivo() = default;
 		void MostrarInfo() override {
 			archivo::MostrarInfo();
+			std::cout << "Nombre del archivo: " << nombre << "\n";
 		}
+private:
+	std::string nombre = "archivo docxs";
 };
 
-
-		class sistemaCarpeta :public virtual carpeta {
+		class sistemaCarpeta :public  carpeta {
 		public:
 			void agregar(Sistema* sistema) {
 				sistemas.push_back(sistema);
 			}
-			void MostrarInfo() override {
+			void MostrarInfo() override { 
 				carpeta::MostrarInfo();
-				for (auto sistema : sistemas) {
+				for (const auto sistema : sistemas) {
 					sistema->MostrarInfo();
 				}
 			}
 		private:
 			std::vector<Sistema*> sistemas;
-
+		
 
 }; 

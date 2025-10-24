@@ -5,7 +5,7 @@ class archivo : public Sistema {
 	public:
 	archivo() = default;
 	~archivo() = default;
-	virtual void MostrarInfo() {
+	void MostrarInfo() {
 		std::cout << "soy un archivo\n";
 	}
 };

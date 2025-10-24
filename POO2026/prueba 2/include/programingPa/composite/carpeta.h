@@ -6,7 +6,7 @@ class carpeta : public Sistema {
 		carpeta() = default;
 		~carpeta() = default;
 		void MostrarInfo() override {
-			std::cout << "Soy una carpeta\n";
+			std::cout << " carpeta\n";
 		}
 	
 };

@@ -159,7 +159,7 @@ int main() {
 	
 	std::cout << "\n";
 		
-	sistemaArchivo* archivo1 = new sistemaArchivo();
+	sistemaArchivo* archivo1 = new sistemaArchivo("documento final");
 	sistemaArchivo* archivo2 = new sistemaArchivo();
 	sistemaCarpeta* carpeta1 = new sistemaCarpeta();
 
