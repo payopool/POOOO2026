@@ -147,6 +147,18 @@
     <ClInclude Include="include\programingPa\composite\composite.h">
       <Filter>Archivos de encabezado\programingPa\Decorator\composite</Filter>
     </ClInclude>
+    <ClInclude Include="include\programingPa\composite\Archivo.h">
+      <Filter>Archivos de encabezado\programingPa\Decorator\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\composite\Sistema.h">
+      <Filter>Archivos de encabezado\programingPa\Decorator\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\composite\carpeta.h">
+      <Filter>Archivos de encabezado\programingPa\Decorator\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\composite\CompositeSitema.h">
+      <Filter>Archivos de encabezado\programingPa\Decorator\composite</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\ProgramingPa\Main3.cpp">

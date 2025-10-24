@@ -158,8 +158,12 @@
     <ClInclude Include="include\programingPa\Builder\Pizza.h" />
     <ClInclude Include="include\programingPa\Builder\Producto.h" />
     <ClInclude Include="include\programingPa\Builder\vegetariana.h" />
+    <ClInclude Include="include\programingPa\composite\Archivo.h" />
+    <ClInclude Include="include\programingPa\composite\carpeta.h" />
     <ClInclude Include="include\programingPa\composite\composite.h" />
+    <ClInclude Include="include\programingPa\composite\CompositeSitema.h" />
     <ClInclude Include="include\programingPa\composite\Hoja.h" />
+    <ClInclude Include="include\programingPa\composite\Sistema.h" />
     <ClInclude Include="include\programingPa\Decorator\AzucarDecorator.h" />
     <ClInclude Include="include\programingPa\Decorator\Cafe.h" />
     <ClInclude Include="include\programingPa\Decorator\Componente.h" />

@@ -27,6 +27,11 @@
 #include"programingPa/Decorator/Condimento.h"
 #include"programingPa/composite/Hoja.h"
 #include"programingPa/composite/composite.h"
+#include"programingPa/composite/Sistema.h"
+#include"programingPa/composite/Archivo.h"
+#include"programingPa/composite/carpeta.h"
+#include"programingPa/composite/CompositeSitema.h"
+
 
 
 
@@ -152,9 +157,20 @@ int main() {
 	delete hoja2;
 	delete composite;
 	
-
+	std::cout << "\n";
 		
-	
+	sistemaArchivo* archivo1 = new sistemaArchivo();
+	sistemaArchivo* archivo2 = new sistemaArchivo();
+	sistemaCarpeta* carpeta1 = new sistemaCarpeta();
+
+	carpeta1->agregar(archivo1);
+	carpeta1->agregar(archivo2);
+
+	carpeta1->MostrarInfo();
+
+	delete archivo1;
+	delete archivo2;
+	delete carpeta1;
 
 		
 
