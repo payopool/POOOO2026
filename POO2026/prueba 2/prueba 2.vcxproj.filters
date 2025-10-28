@@ -43,6 +43,9 @@
     <Filter Include="Archivos de encabezado\programingPa\Decorator\composite">
       <UniqueIdentifier>{f10e281e-f1ea-4e2a-9e80-0b8b6cf2c6b5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\programingPa\Proxy">
+      <UniqueIdentifier>{905c4033-1bde-4f07-b3e4-653789b0015f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Header.h">
@@ -158,6 +161,15 @@
     </ClInclude>
     <ClInclude Include="include\programingPa\composite\CompositeSitema.h">
       <Filter>Archivos de encabezado\programingPa\Decorator\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Proxy\Sujeto.h">
+      <Filter>Archivos de encabezado\programingPa\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Proxy\proxy.h">
+      <Filter>Archivos de encabezado\programingPa\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Proxy\sujetoreal.h">
+      <Filter>Archivos de encabezado\programingPa\Proxy</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

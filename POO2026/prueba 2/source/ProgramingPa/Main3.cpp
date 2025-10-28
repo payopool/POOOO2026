@@ -31,12 +31,7 @@
 #include"programingPa/composite/Archivo.h"
 #include"programingPa/composite/carpeta.h"
 #include"programingPa/composite/CompositeSitema.h"
-
-
-
-
-
-
+#include "programingPa/Proxy/proxy.h"
 
 
 
@@ -172,7 +167,10 @@ int main() {
 	delete archivo2;
 	delete carpeta1;
 
-		
+	Proxy* proxy = new Proxy();
+	proxy->solicitar();
+	proxy->solicitar();
+	delete proxy;
 
 
 
