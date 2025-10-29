@@ -46,6 +46,9 @@
     <Filter Include="Archivos de encabezado\programingPa\Proxy">
       <UniqueIdentifier>{905c4033-1bde-4f07-b3e4-653789b0015f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\programingPa\Observer">
+      <UniqueIdentifier>{04632344-b56e-4880-86dd-f31c33fbbe38}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Header.h">
@@ -170,6 +173,15 @@
     </ClInclude>
     <ClInclude Include="include\programingPa\Proxy\sujetoreal.h">
       <Filter>Archivos de encabezado\programingPa\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Observer\Observer.h">
+      <Filter>Archivos de encabezado\programingPa\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Observer\TemperatureSensor.h">
+      <Filter>Archivos de encabezado\programingPa\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Observer\DisplayDivice.h">
+      <Filter>Archivos de encabezado\programingPa\Observer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
