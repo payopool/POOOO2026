@@ -183,6 +183,15 @@
     <ClInclude Include="include\programingPa\Observer\DisplayDivice.h">
       <Filter>Archivos de encabezado\programingPa\Observer</Filter>
     </ClInclude>
+    <ClInclude Include="include\programingPa\Proxy\imagen.h">
+      <Filter>Archivos de encabezado\programingPa\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Proxy\Mostrar.h">
+      <Filter>Archivos de encabezado\programingPa\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Proxy\Proxyimagen.h">
+      <Filter>Archivos de encabezado\programingPa\Proxy</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\ProgramingPa\Main3.cpp">

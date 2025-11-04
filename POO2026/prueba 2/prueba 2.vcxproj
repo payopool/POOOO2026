@@ -183,7 +183,10 @@
     <ClInclude Include="include\programingPa\Prototype\Doctext.h" />
     <ClInclude Include="include\programingPa\Prototype\Documento.h" />
     <ClInclude Include="include\programingPa\Prototype\Prototype.h" />
+    <ClInclude Include="include\programingPa\Proxy\imagen.h" />
+    <ClInclude Include="include\programingPa\Proxy\Mostrar.h" />
     <ClInclude Include="include\programingPa\Proxy\proxy.h" />
+    <ClInclude Include="include\programingPa\Proxy\Proxyimagen.h" />
     <ClInclude Include="include\programingPa\Proxy\Sujeto.h" />
     <ClInclude Include="include\programingPa\Proxy\sujetoreal.h" />
   </ItemGroup>

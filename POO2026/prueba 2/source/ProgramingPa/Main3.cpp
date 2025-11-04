@@ -31,9 +31,9 @@
 #include"programingPa/composite/Archivo.h"
 #include"programingPa/composite/carpeta.h"
 #include"programingPa/composite/CompositeSitema.h"
-#include "programingPa/Proxy/proxy.h"
 #include"programingPa/Observer/TemperatureSensor.h"
 #include"programingPa/Observer/DisplayDivice.h"
+#include"programingPa/Proxy/Proxyimagen.h"
 
 
 int main() {
@@ -170,19 +170,18 @@ int main() {
 
 	std::cout<<"\n";
 
-	Proxy* proxy = new Proxy();
-	proxy->solicitar();
-	proxy->solicitar();
-	delete proxy;
-
-
-	std::cout << "\n";
 
 	TemperatureServer sensor;
 	DisplayDivice display;
 	sensor.addObserver(&display);
 	sensor.setTemperature(25);
 	sensor.setTemperature(60);
+
+	std::cout << "\n";
+	Proxy* proxyImagen = new Proxy();
+	proxyImagen->mostrar();
+	proxyImagen->mostrar();
+	delete proxyImagen;
 
 
 		return 0;
