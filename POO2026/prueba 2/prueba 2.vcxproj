@@ -150,6 +150,15 @@
     <ClInclude Include="include\programingPa\adapter\Dibujable.h" />
     <ClInclude Include="include\programingPa\adapter\interfaNew.h" />
     <ClInclude Include="include\programingPa\adapter\InterfasVieja.h" />
+    <ClInclude Include="include\programingPa\Bringe\abstraccionDefinida.h" />
+    <ClInclude Include="include\programingPa\Bringe\abstracion.h" />
+    <ClInclude Include="include\programingPa\Bringe\Controlremoto.h" />
+    <ClInclude Include="include\programingPa\Bringe\Dispositivo.h" />
+    <ClInclude Include="include\programingPa\Bringe\Implementacion.h" />
+    <ClInclude Include="include\programingPa\Bringe\ImplementacionConcretaA.h" />
+    <ClInclude Include="include\programingPa\Bringe\ImplementacionConcretaB.h" />
+    <ClInclude Include="include\programingPa\Bringe\Radio.h" />
+    <ClInclude Include="include\programingPa\Bringe\Tv.h" />
     <ClInclude Include="include\programingPa\Builder\Builder.h" />
     <ClInclude Include="include\programingPa\Builder\BuilderConcret.h" />
     <ClInclude Include="include\programingPa\Builder\ConstructorPizza.h" />
@@ -192,7 +201,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\ProgramingPa\Builder\BuilderConcret.cpp" />
-    <ClCompile Include="source\ProgramingPa\Main3.cpp" />
+    <ClCompile Include="source\ProgramingPa\Main4.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

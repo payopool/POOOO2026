@@ -49,6 +49,9 @@
     <Filter Include="Archivos de encabezado\programingPa\Observer">
       <UniqueIdentifier>{04632344-b56e-4880-86dd-f31c33fbbe38}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\programingPa\Bringe">
+      <UniqueIdentifier>{950ebc22-a497-4cd4-b715-675846aca786}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Header.h">
@@ -192,13 +195,40 @@
     <ClInclude Include="include\programingPa\Proxy\Proxyimagen.h">
       <Filter>Archivos de encabezado\programingPa\Proxy</Filter>
     </ClInclude>
+    <ClInclude Include="include\programingPa\Bringe\ImplementacionConcretaA.h">
+      <Filter>Archivos de encabezado\programingPa\Bringe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Bringe\ImplementacionConcretaB.h">
+      <Filter>Archivos de encabezado\programingPa\Bringe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Bringe\Implementacion.h">
+      <Filter>Archivos de encabezado\programingPa\Bringe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Bringe\abstracion.h">
+      <Filter>Archivos de encabezado\programingPa\Bringe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Bringe\abstraccionDefinida.h">
+      <Filter>Archivos de encabezado\programingPa\Bringe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Bringe\Controlremoto.h">
+      <Filter>Archivos de encabezado\programingPa\Bringe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Bringe\Tv.h">
+      <Filter>Archivos de encabezado\programingPa\Bringe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Bringe\Dispositivo.h">
+      <Filter>Archivos de encabezado\programingPa\Bringe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Bringe\Radio.h">
+      <Filter>Archivos de encabezado\programingPa\Bringe</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="source\ProgramingPa\Main3.cpp">
-      <Filter>Archivos de origen\ProgramingPa</Filter>
-    </ClCompile>
     <ClCompile Include="source\ProgramingPa\Builder\BuilderConcret.cpp">
       <Filter>Archivos de origen\ProgramingPa\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgramingPa\Main4.cpp">
+      <Filter>Archivos de origen\ProgramingPa</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
