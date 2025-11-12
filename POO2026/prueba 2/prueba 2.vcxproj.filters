@@ -52,6 +52,9 @@
     <Filter Include="Archivos de encabezado\programingPa\Bringe">
       <UniqueIdentifier>{950ebc22-a497-4cd4-b715-675846aca786}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\programingPa\chainresponsability">
+      <UniqueIdentifier>{ebe7d893-2378-4f3c-86d1-a2c851b1b56e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Header.h">
@@ -221,6 +224,18 @@
     </ClInclude>
     <ClInclude Include="include\programingPa\Bringe\Radio.h">
       <Filter>Archivos de encabezado\programingPa\Bringe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\chainresponsability\Manejador.h">
+      <Filter>Archivos de encabezado\programingPa\chainresponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\chainresponsability\ManejadorConcretB.h">
+      <Filter>Archivos de encabezado\programingPa\chainresponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\chainresponsability\ManejadorConcretC.h">
+      <Filter>Archivos de encabezado\programingPa\chainresponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\chainresponsability\ManejadorConcretA.h">
+      <Filter>Archivos de encabezado\programingPa\chainresponsability</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

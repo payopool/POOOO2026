@@ -7,6 +7,10 @@
 #include"programingPa/Bringe/Controlremoto.h"
 #include"programingPa/Bringe/Tv.h"
 #include"programingPa/Bringe/Radio.h"
+#include"programingPa/chainresponsability/Manejador.h"
+#include"programingPa/chainresponsability/ManejadorConcretA.h"
+#include"programingPa/chainresponsability/ManejadorConcretB.h"
+#include"programingPa/chainresponsability/ManejadorConcretC.h"
 
 int main() {
 
@@ -30,6 +34,18 @@ int main() {
 
 	controlRadio->encenderDispo();
 	controlRadio->apagarDispo();
+
+	std::cout << "\n";
+
+ ManejadorConcretC manejadorC(nullptr, "none");
+ ManejadorConcretB manejadorB(&manejadorC, "B");
+ ManejadorConcretA manejadorA(&manejadorB, "A");
+
+ int peticiones[] = { 5, 15, 25, 8, 18, 30 };
+ for (int peticion : peticiones) {
+	 manejadorA.manejarpeticion(peticion);
+ }
+
 
 
 

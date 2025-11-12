@@ -167,6 +167,10 @@
     <ClInclude Include="include\programingPa\Builder\Pizza.h" />
     <ClInclude Include="include\programingPa\Builder\Producto.h" />
     <ClInclude Include="include\programingPa\Builder\vegetariana.h" />
+    <ClInclude Include="include\programingPa\chainresponsability\Manejador.h" />
+    <ClInclude Include="include\programingPa\chainresponsability\ManejadorConcretA.h" />
+    <ClInclude Include="include\programingPa\chainresponsability\ManejadorConcretB.h" />
+    <ClInclude Include="include\programingPa\chainresponsability\ManejadorConcretC.h" />
     <ClInclude Include="include\programingPa\composite\Archivo.h" />
     <ClInclude Include="include\programingPa\composite\carpeta.h" />
     <ClInclude Include="include\programingPa\composite\composite.h" />
