@@ -11,6 +11,7 @@
 #include"programingPa/chainresponsability/ManejadorConcretA.h"
 #include"programingPa/chainresponsability/ManejadorConcretB.h"
 #include"programingPa/chainresponsability/ManejadorConcretC.h"
+#include"programingPa/SingletonMulti/SingletonMultiThread.h"
 
 std::mutex mtx;
 
@@ -36,6 +37,15 @@ void theardName(int id , std::string name){
 		std::cout << "Thread " << id << " Running: " << name << "\n";
 		mtx.unlock();
 	}
+}
+
+SingletonMultiThread* SingletonMultiThread::instance = nullptr;
+std::mutex SingletonMultiThread::mtx;
+void useSingleton(int id) {
+		SingletonMultiThread* singleton = SingletonMultiThread::getInstance();
+		std::cout << "thread" << id << "using singleton"<<&singleton <<"\n";
+	std::cout << "\n";
+
 }
 
 int main() {
@@ -84,7 +94,13 @@ int main() {
  std::cout << "Global counter: " << global_counter << "\n";
 
 
+ std::cout << "\n";
 
+ std::thread s1(useSingleton, 1);
+ std::thread s2(useSingleton, 2);
+
+ s1.join();
+ s2.join();
 
 	return 0;
 }

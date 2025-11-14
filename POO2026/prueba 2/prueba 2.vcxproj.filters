@@ -55,6 +55,9 @@
     <Filter Include="Archivos de encabezado\programingPa\chainresponsability">
       <UniqueIdentifier>{ebe7d893-2378-4f3c-86d1-a2c851b1b56e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\programingPa\SingletonMulti">
+      <UniqueIdentifier>{e93e43aa-1c66-4e52-89ef-4cacbafe8b2a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Header.h">
@@ -236,6 +239,9 @@
     </ClInclude>
     <ClInclude Include="include\programingPa\chainresponsability\ManejadorConcretA.h">
       <Filter>Archivos de encabezado\programingPa\chainresponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\SingletonMulti\SingletonMultiThread.h">
+      <Filter>Archivos de encabezado\programingPa\SingletonMulti</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

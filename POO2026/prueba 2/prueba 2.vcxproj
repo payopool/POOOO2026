@@ -202,6 +202,7 @@
     <ClInclude Include="include\programingPa\Proxy\Proxyimagen.h" />
     <ClInclude Include="include\programingPa\Proxy\Sujeto.h" />
     <ClInclude Include="include\programingPa\Proxy\sujetoreal.h" />
+    <ClInclude Include="include\programingPa\SingletonMulti\SingletonMultiThread.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\ProgramingPa\Builder\BuilderConcret.cpp" />
