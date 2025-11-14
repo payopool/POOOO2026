@@ -3,6 +3,10 @@
 #include<vector>
 #include<string>
 #include<ctime>
+#include <thread>
+#include <mutex>
+
+
 struct Fecha {
 	int dia;
 	int mes;

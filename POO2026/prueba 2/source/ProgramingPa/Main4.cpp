@@ -12,6 +12,32 @@
 #include"programingPa/chainresponsability/ManejadorConcretB.h"
 #include"programingPa/chainresponsability/ManejadorConcretC.h"
 
+std::mutex mtx;
+
+int global_counter = 0;
+
+void thread(int id) {
+	for (unsigned int i = 0; i < 5; i++) {
+		mtx.lock();
+		std::cout << "Thread " << id << " is running \n";
+		mtx.unlock();
+	}
+}
+void threadCount(int id){
+		for (unsigned int i = 0; i < 5; i++) {
+		mtx.lock();
+		global_counter++;
+		mtx.unlock();
+	}
+}
+void theardName(int id , std::string name){
+	for (unsigned int i = 0; i < 5; i++) {
+		mtx.lock();
+		std::cout << "Thread " << id << " Running: " << name << "\n";
+		mtx.unlock();
+	}
+}
+
 int main() {
 
 	Implementacion* implA = new ImplementacionConcretaA();
@@ -45,6 +71,17 @@ int main() {
  for (int peticion : peticiones) {
 	 manejadorA.manejarpeticion(peticion);
  }
+ std::cout << "\n";
+
+ std::thread t1(thread, 1);
+ std::thread t2(theardName, 2, "pepe");
+ std::thread t3(threadCount, 3);
+
+ t1.join();
+ t2.join();
+ t3.join();
+
+ std::cout << "Global counter: " << global_counter << "\n";
 
 
 
