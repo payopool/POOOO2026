@@ -21,6 +21,23 @@ int main() {
 
 	std::cout << "\n";
 
+	Operaciones operacion;
+	Calculadora calculadora;
+	calculadora.getOperacion().Sumar(10);
+	calculadora.getOperacion().Sumar(10);
+	calculadora.mostrarResultado();
+	calculadora.getOperacion().Restar(5);
+	calculadora.mostrarResultado();
+	calculadora.getOperacion().multiplicar(5);
+	calculadora.mostrarResultado();
+	calculadora.getOperacion().dividir(3);
+	calculadora.mostrarResultado();
+	calculadora.reiniciar();
+
+
+
+	
+
 
 	
 	return 0;

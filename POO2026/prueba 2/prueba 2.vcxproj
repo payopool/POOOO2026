@@ -174,8 +174,11 @@
     <ClInclude Include="include\programingPa\Commander\Comando.h" />
     <ClInclude Include="include\programingPa\Commander\ConcretComand\Comandoapagar.h" />
     <ClInclude Include="include\programingPa\Commander\ConcretComand\Controlencender.h" />
+    <ClInclude Include="include\programingPa\Commander\ConcretComand\Operaciones.h" />
+    <ClInclude Include="include\programingPa\Commander\Inover\Cañculadora.h" />
     <ClInclude Include="include\programingPa\Commander\Inover\ControlRemoto.h" />
     <ClInclude Include="include\programingPa\Commander\Luz.h" />
+    <ClInclude Include="include\programingPa\Commander\operacion.h" />
     <ClInclude Include="include\programingPa\composite\Archivo.h" />
     <ClInclude Include="include\programingPa\composite\carpeta.h" />
     <ClInclude Include="include\programingPa\composite\composite.h" />

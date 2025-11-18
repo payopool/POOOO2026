@@ -267,6 +267,15 @@
     <ClInclude Include="include\programingPa\Commander\Inover\ControlRemoto.h">
       <Filter>Archivos de encabezado\programingPa\Commander\Inover</Filter>
     </ClInclude>
+    <ClInclude Include="include\programingPa\Commander\operacion.h">
+      <Filter>Archivos de encabezado\programingPa\Commander</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Commander\ConcretComand\Operaciones.h">
+      <Filter>Archivos de encabezado\programingPa\Commander\ConcretComand</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Commander\Inover\Cañculadora.h">
+      <Filter>Archivos de encabezado\programingPa\Commander\Inover</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\ProgramingPa\Builder\BuilderConcret.cpp">
