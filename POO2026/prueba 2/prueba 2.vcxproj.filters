@@ -58,6 +58,15 @@
     <Filter Include="Archivos de encabezado\programingPa\SingletonMulti">
       <UniqueIdentifier>{e93e43aa-1c66-4e52-89ef-4cacbafe8b2a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\programingPa\Commander">
+      <UniqueIdentifier>{1e63769e-a0ec-4763-95b0-f5434caea3b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\programingPa\Commander\ConcretComand">
+      <UniqueIdentifier>{35e411bf-f7d3-4e2a-bfa4-d46b059a41de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\programingPa\Commander\Inover">
+      <UniqueIdentifier>{f9dd6d37-3695-46f8-9d6b-adaad3725611}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Header.h">
@@ -242,6 +251,21 @@
     </ClInclude>
     <ClInclude Include="include\programingPa\SingletonMulti\SingletonMultiThread.h">
       <Filter>Archivos de encabezado\programingPa\SingletonMulti</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Commander\Comando.h">
+      <Filter>Archivos de encabezado\programingPa\Commander</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Commander\Luz.h">
+      <Filter>Archivos de encabezado\programingPa\Commander</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Commander\ConcretComand\Controlencender.h">
+      <Filter>Archivos de encabezado\programingPa\Commander\ConcretComand</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Commander\ConcretComand\Comandoapagar.h">
+      <Filter>Archivos de encabezado\programingPa\Commander\ConcretComand</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Commander\Inover\ControlRemoto.h">
+      <Filter>Archivos de encabezado\programingPa\Commander\Inover</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

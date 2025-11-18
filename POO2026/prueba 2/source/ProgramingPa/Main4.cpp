@@ -1,106 +1,27 @@
 #include"Header.h"
-#include"programingPa/Bringe/abstracion.h"
-#include"programingPa/Bringe/ImplementacionConcretaA.h"
-#include"programingPa/Bringe/ImplementacionConcretaB.h"
-#include"programingPa/Bringe/abstraccionDefinida.h"
-#include"programingPa/Bringe/Dispositivo.h"
-#include"programingPa/Bringe/Controlremoto.h"
-#include"programingPa/Bringe/Tv.h"
-#include"programingPa/Bringe/Radio.h"
-#include"programingPa/chainresponsability/Manejador.h"
-#include"programingPa/chainresponsability/ManejadorConcretA.h"
-#include"programingPa/chainresponsability/ManejadorConcretB.h"
-#include"programingPa/chainresponsability/ManejadorConcretC.h"
-#include"programingPa/SingletonMulti/SingletonMultiThread.h"
 
-std::mutex mtx;
+#include"programingPa/Commander/Comando.h"
+#include"programingPa/Commander/Luz.h"
+#include"programingPa/Commander/ConcretComand/Controlencender.h"
+#include"programingPa/Commander/ConcretComand/Comandoapagar.h"
+#include"programingPa/Commander/Inover/ControlRemoto.h"
+#include"programingPa/Commander/ConcretComand/Operaciones.h"
+#include"programingPa/Commander/operacion.h"
+#include "programingPa/Commander/Inover/Cañculadora.h"
 
-int global_counter = 0;
-
-void thread(int id) {
-	for (unsigned int i = 0; i < 5; i++) {
-		mtx.lock();
-		std::cout << "Thread " << id << " is running \n";
-		mtx.unlock();
-	}
-}
-void threadCount(int id){
-		for (unsigned int i = 0; i < 5; i++) {
-		mtx.lock();
-		global_counter++;
-		mtx.unlock();
-	}
-}
-void theardName(int id , std::string name){
-	for (unsigned int i = 0; i < 5; i++) {
-		mtx.lock();
-		std::cout << "Thread " << id << " Running: " << name << "\n";
-		mtx.unlock();
-	}
-}
-
-SingletonMultiThread* SingletonMultiThread::instance = nullptr;
-std::mutex SingletonMultiThread::mtx;
-void useSingleton(int id) {
-		SingletonMultiThread* singleton = SingletonMultiThread::getInstance();
-		std::cout << "thread" << id << "using singleton"<<&singleton <<"\n";
-	std::cout << "\n";
-
-}
 
 int main() {
-
-	Implementacion* implA = new ImplementacionConcretaA();
-	Abstraccion* abstraccionA = new AbstraccionDefinida(implA);
-	abstraccionA->operacion();
-	Implementacion* implB = new ImplementacionConcretaB();
-	Abstraccion* abstraccionB = new AbstraccionDefinida(implB);
-	abstraccionB->operacion();
-
-	std::cout << "\n";
-
-	Dispositivo* tv = new Tv();
-	Dispositivo* radio = new Radio();
-
-	ControlRemoto* controlTv = new ControlRemoto(tv);
-	ControlRemoto* controlRadio = new ControlRemoto(radio);
-
-	controlTv->encenderDispo();
-	controlTv->apagarDispo();
-
-	controlRadio->encenderDispo();
-	controlRadio->apagarDispo();
+	luz luz;
+	Controlencender encender(&luz);
+	Comandoapagar apagar(&luz);
+	ControlRemoto control;
+	control.ejecutarComando(&encender);
+	control.ejecutarComando(&apagar);
+	control.deshacerComando();
 
 	std::cout << "\n";
 
- ManejadorConcretC manejadorC(nullptr, "none");
- ManejadorConcretB manejadorB(&manejadorC, "B");
- ManejadorConcretA manejadorA(&manejadorB, "A");
 
- int peticiones[] = { 5, 15, 25, 8, 18, 30 };
- for (int peticion : peticiones) {
-	 manejadorA.manejarpeticion(peticion);
- }
- std::cout << "\n";
-
- std::thread t1(thread, 1);
- std::thread t2(theardName, 2, "pepe");
- std::thread t3(threadCount, 3);
-
- t1.join();
- t2.join();
- t3.join();
-
- std::cout << "Global counter: " << global_counter << "\n";
-
-
- std::cout << "\n";
-
- std::thread s1(useSingleton, 1);
- std::thread s2(useSingleton, 2);
-
- s1.join();
- s2.join();
-
+	
 	return 0;
 }
