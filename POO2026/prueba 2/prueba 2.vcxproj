@@ -195,6 +195,9 @@
     <ClInclude Include="include\programingPa\Decorator\Decorator.h" />
     <ClInclude Include="include\programingPa\Decorator\DecoratorCafe.h" />
     <ClInclude Include="include\programingPa\Decorator\DecoratorLeche.h" />
+    <ClInclude Include="include\programingPa\Flayweith\ConcretFlayweith.h" />
+    <ClInclude Include="include\programingPa\Flayweith\FactoryFlayweith.h" />
+    <ClInclude Include="include\programingPa\Flayweith\Flayweith.h" />
     <ClInclude Include="include\programingPa\Observer\DisplayDivice.h" />
     <ClInclude Include="include\programingPa\Observer\Observer.h" />
     <ClInclude Include="include\programingPa\Observer\TemperatureSensor.h" />

@@ -67,6 +67,9 @@
     <Filter Include="Archivos de encabezado\programingPa\Commander\Inover">
       <UniqueIdentifier>{f9dd6d37-3695-46f8-9d6b-adaad3725611}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\programingPa\Flayweith">
+      <UniqueIdentifier>{9f4d92ee-96a1-4956-8152-b082514aa250}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Header.h">
@@ -275,6 +278,15 @@
     </ClInclude>
     <ClInclude Include="include\programingPa\Commander\Inover\Cañculadora.h">
       <Filter>Archivos de encabezado\programingPa\Commander\Inover</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Flayweith\ConcretFlayweith.h">
+      <Filter>Archivos de encabezado\programingPa\Flayweith</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Flayweith\Flayweith.h">
+      <Filter>Archivos de encabezado\programingPa\Flayweith</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Flayweith\FactoryFlayweith.h">
+      <Filter>Archivos de encabezado\programingPa\Flayweith</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

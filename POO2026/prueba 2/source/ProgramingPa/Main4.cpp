@@ -8,6 +8,7 @@
 #include"programingPa/Commander/ConcretComand/Operaciones.h"
 #include"programingPa/Commander/operacion.h"
 #include "programingPa/Commander/Inover/Cañculadora.h"
+#include"programingPa/Flayweith/FactoryFlayweith.h"
 
 
 int main() {
@@ -33,6 +34,13 @@ int main() {
 	calculadora.getOperacion().dividir(3);
 	calculadora.mostrarResultado();
 	calculadora.reiniciar();
+	std::cout << "\n";
+	FactoryFlayweith factory;
+	Flyweight* fly1 = factory.getFlyweight('A');
+	fly1->draw(10, 20);
+	Flyweight* fly2 = factory.getFlyweight('B');
+	fly2->draw(30, 40);
+
 
 
 
