@@ -214,6 +214,11 @@
     <ClInclude Include="include\programingPa\Proxy\Sujeto.h" />
     <ClInclude Include="include\programingPa\Proxy\sujetoreal.h" />
     <ClInclude Include="include\programingPa\SingletonMulti\SingletonMultiThread.h" />
+    <ClInclude Include="include\programingPa\State\BerserkState.h" />
+    <ClInclude Include="include\programingPa\State\damagestate.h" />
+    <ClInclude Include="include\programingPa\State\Normalstate.h" />
+    <ClInclude Include="include\programingPa\State\Player.h" />
+    <ClInclude Include="include\programingPa\State\playerstate.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\ProgramingPa\Builder\BuilderConcret.cpp" />

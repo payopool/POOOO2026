@@ -70,6 +70,9 @@
     <Filter Include="Archivos de encabezado\programingPa\Flayweith">
       <UniqueIdentifier>{9f4d92ee-96a1-4956-8152-b082514aa250}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\programingPa\State">
+      <UniqueIdentifier>{c1d6dab3-f2af-4c04-9193-62345f31d662}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Header.h">
@@ -287,6 +290,21 @@
     </ClInclude>
     <ClInclude Include="include\programingPa\Flayweith\FactoryFlayweith.h">
       <Filter>Archivos de encabezado\programingPa\Flayweith</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\State\playerstate.h">
+      <Filter>Archivos de encabezado\programingPa\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\State\Normalstate.h">
+      <Filter>Archivos de encabezado\programingPa\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\State\damagestate.h">
+      <Filter>Archivos de encabezado\programingPa\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\State\BerserkState.h">
+      <Filter>Archivos de encabezado\programingPa\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\State\Player.h">
+      <Filter>Archivos de encabezado\programingPa\State</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

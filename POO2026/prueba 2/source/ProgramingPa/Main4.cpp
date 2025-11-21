@@ -9,6 +9,11 @@
 #include"programingPa/Commander/operacion.h"
 #include "programingPa/Commander/Inover/Cañculadora.h"
 #include"programingPa/Flayweith/FactoryFlayweith.h"
+#include"programingPa/State/playerstate.h"
+#include"programingPa/State/Normalstate.h"
+#include"programingPa/State/damagestate.h"
+#include"programingPa/State/BerserkState.h"
+#include"programingPa/State/player.h"
 
 
 int main() {
@@ -41,6 +46,23 @@ int main() {
 	Flyweight* fly2 = factory.getFlyweight('B');
 	fly2->draw(30, 40);
 
+	std::cout << "\n";
+	Player* player = new Player();
+	player->Attack();
+	player->Defend();
+	player->Move();
+	std::cout << "player damage\n";
+	player->setState(new damageState());
+	player->Attack();
+	player->Defend();
+	player->Move();
+	std::cout << "player Berserk\n";
+	player->setState(new BerserkState());
+	player->Attack();
+	player->Defend();
+	player->Move();
+
+		
 
 
 
