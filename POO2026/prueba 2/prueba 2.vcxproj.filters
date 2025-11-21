@@ -306,6 +306,18 @@
     <ClInclude Include="include\programingPa\State\Player.h">
       <Filter>Archivos de encabezado\programingPa\State</Filter>
     </ClInclude>
+    <ClInclude Include="include\programingPa\State\StateCar.h">
+      <Filter>Archivos de encabezado\programingPa\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\State\car.h">
+      <Filter>Archivos de encabezado\programingPa\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\State\CarFater.h">
+      <Filter>Archivos de encabezado\programingPa\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\State\carSlow.h">
+      <Filter>Archivos de encabezado\programingPa\State</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\ProgramingPa\Builder\BuilderConcret.cpp">

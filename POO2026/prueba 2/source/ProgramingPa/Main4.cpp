@@ -14,6 +14,10 @@
 #include"programingPa/State/damagestate.h"
 #include"programingPa/State/BerserkState.h"
 #include"programingPa/State/player.h"
+#include"programingPa/State/StateCar.h"
+#include"programingPa/State/car.h"
+#include"programingPa/State/CarFater.h"
+#include"programingPa/State/carSlow.h"
 
 
 int main() {
@@ -62,7 +66,22 @@ int main() {
 	player->Defend();
 	player->Move();
 
-		
+	delete player ;
+	std::cout << "\n";
+
+	Car* car = new Car();
+	std::cout << "Car Faster\n";
+	car->setState(new CarFater());
+	car->Accelerate();
+	car->Brake();
+	car->Turn();
+	std::cout << "Car Slow\n";
+	car->setState(new CarSlow());
+	car->Accelerate();
+	car->Brake();
+	car->Turn();
+	delete car;
+
 
 
 
