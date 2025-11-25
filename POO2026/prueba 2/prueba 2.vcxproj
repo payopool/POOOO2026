@@ -223,6 +223,11 @@
     <ClInclude Include="include\programingPa\State\Player.h" />
     <ClInclude Include="include\programingPa\State\playerstate.h" />
     <ClInclude Include="include\programingPa\State\StateCar.h" />
+    <ClInclude Include="include\programingPa\strategy\IAattackStrategy.h" />
+    <ClInclude Include="include\programingPa\strategy\MagicAttack.h" />
+    <ClInclude Include="include\programingPa\strategy\MeleeAttack.h" />
+    <ClInclude Include="include\programingPa\strategy\Player-strategy.h" />
+    <ClInclude Include="include\programingPa\strategy\RangesAttack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\ProgramingPa\Builder\BuilderConcret.cpp" />

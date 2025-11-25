@@ -73,6 +73,9 @@
     <Filter Include="Archivos de encabezado\programingPa\State">
       <UniqueIdentifier>{c1d6dab3-f2af-4c04-9193-62345f31d662}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\programingPa\strategy">
+      <UniqueIdentifier>{14771231-fdc3-408f-9bdd-a91c436d3bc4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Header.h">
@@ -317,6 +320,21 @@
     </ClInclude>
     <ClInclude Include="include\programingPa\State\carSlow.h">
       <Filter>Archivos de encabezado\programingPa\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\strategy\IAattackStrategy.h">
+      <Filter>Archivos de encabezado\programingPa\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\strategy\RangesAttack.h">
+      <Filter>Archivos de encabezado\programingPa\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\strategy\MagicAttack.h">
+      <Filter>Archivos de encabezado\programingPa\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\strategy\MeleeAttack.h">
+      <Filter>Archivos de encabezado\programingPa\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\strategy\Player-strategy.h">
+      <Filter>Archivos de encabezado\programingPa\strategy</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

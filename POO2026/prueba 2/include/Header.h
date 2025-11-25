@@ -6,6 +6,7 @@
 #include <thread>
 #include <mutex>
 #include<unordered_map>
+#include<memory>
 
 
 struct Fecha {
