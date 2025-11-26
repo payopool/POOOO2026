@@ -5,6 +5,7 @@
 #include"programingPa/strategy/MagicAttack.h"
 #include"programingPa/strategy/Player-strategy.h"
 #include"programingPa/strategy/RangesAttack.h"
+#include"programingPa/Fecade/AudioFecade.h"
 
 
 int main() {
@@ -20,8 +21,13 @@ int main() {
 	damage = player.Attack(50);
 	std::cout << "ataque distancia: " << damage << "\n";
 
-
+	std::cout << "\n";
 	
+	AudioFacade audio;
+	audio.initialize();
+	audio.playBackgroundMusic("musica_fondo.mp3");
+	audio.setMasterVolume(0.5f);
+	audio.enableReverb(false);
 
 
 	

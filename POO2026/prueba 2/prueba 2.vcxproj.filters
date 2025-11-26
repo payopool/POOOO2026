@@ -76,6 +76,9 @@
     <Filter Include="Archivos de encabezado\programingPa\strategy">
       <UniqueIdentifier>{14771231-fdc3-408f-9bdd-a91c436d3bc4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\programingPa\Fecade">
+      <UniqueIdentifier>{74502e1d-072c-4e5e-82a0-4ad069260aa4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Header.h">
@@ -335,6 +338,18 @@
     </ClInclude>
     <ClInclude Include="include\programingPa\strategy\Player-strategy.h">
       <Filter>Archivos de encabezado\programingPa\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Fecade\audioLoader.h">
+      <Filter>Archivos de encabezado\programingPa\Fecade</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Fecade\AudioMixer.h">
+      <Filter>Archivos de encabezado\programingPa\Fecade</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Fecade\AudioEffectProcess.h">
+      <Filter>Archivos de encabezado\programingPa\Fecade</Filter>
+    </ClInclude>
+    <ClInclude Include="include\programingPa\Fecade\AudioFecade.h">
+      <Filter>Archivos de encabezado\programingPa\Fecade</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
